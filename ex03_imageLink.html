@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Image Link</title>
+</head>
+<body bgcolor=#ffd700>
+<font size="5" color=purple face=돋움>1. image와 경로지정 </font><p>
+
+<h3>1.1) 상대경로</h3>
+=> 현재 파일 위치에서 시작하는 상대적인 경로<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-현재위치 : ./<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-한단계 상위 위치 ../<br>
+
+<img alt="이게 뭐임?" title="title_test" src="../image/aaa.gif" width="100" height="100">&nbsp;&nbsp;
+<img alt="이게 뭐냐고ㅋㅋ" src="../image/aaa.gif" width="250" height="200">&nbsp;&nbsp;
+<img alt="이게 뭐냐고ㅋㅋ" src="../image/aaa.gif" width="300" height="400">
+<img alt="이미지가 안나올 때 나오는 문구" src="../image/aaaㅁㄴㅇ.gif" width="300" height="400">
+
+
+<hr color=blueviolet>
+<h3>1.2) 절대경로</h3>
+=> /프로젝트명 으로 시작하며 webapp 경로는 넣지 않는다.<br>
+<img src="/HTML01/image/bbb.gif" width="25%" height="40%">&nbsp;&nbsp;
+<img src="/HTML01/image/ccc.gif">&nbsp;&nbsp;
+<img src="/HTML01/image/ddd.gif">&nbsp;&nbsp;
+<img src="/HTML01/image/eee.gif">&nbsp;&nbsp;
+
+<h3>1.3) color 속성</h3>
+=> colorName:red, 16진수:#FF00FF, RGB(css에서 적용)<br>
+
+<font size=5 color=violet>2. image와 link</font><p>
+<a href="https://www.w3schools.com/colors/colors_groups.asp" > [access to color groups] </a>&nbsp;&nbsp;
+<a href="https://naver.com" target="_blank"> [naver] </a><br>
+<a href="./ex01_FontnText.html" > [font text.html 상대경로] </a>
+<a href="ex01_FontnText.html" > [./ 생략, font text.html 상대경로] </a>
+<a href="/HTML01/html01/ex00_hello.html" > [hello.html 절대경로] </a><br>
+<a href="https://naver.com" target="_blank"> <img title=네이버로이동 src="/HTML01/image/bbb.gif"> </a>
+<a href="https://naver.com" target="_blank"> <img title=네이버로이동 src="../image/ccc.gif"> [naver 이동] </a><br>
+</body>
+</html>
